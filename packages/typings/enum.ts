@@ -1,3 +1,7 @@
+export enum LayoutDirection {
+  VERTICAL = "vertical",
+  HORIZONTAL = "horizontal",
+}
 export enum ProjectEnv {
   DEV = "development",
   PROD = "production",
