@@ -16,5 +16,8 @@ declare type AnyDateType = `${string}-${string}-${string}`;
 // match: xxx:xxx:xxx
 declare type AnyTimeType = `${string}:${string}:${string}`;
 
-// match any class instance
-declare type AnyClass<T> = new () => T;
+// match any class
+declare type AnyClass = new (...args: any[]) => any;
+
+// macth class by T
+declare type TypedClass<T = any> = new (...args: any[]) => any;
